@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class VariablesTypes {
+public class OperacoesMatematica {
 
     public static Scanner ler = new Scanner(System.in);
 
