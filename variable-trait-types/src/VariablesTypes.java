@@ -9,7 +9,11 @@ public class VariablesTypes {
       subtração, multiplicação e divisão desses números. */
 
     public static void main(String[] args) throws Exception {
-        
+        menu();
+   
+    }
+
+    public static void menu(){
         System.out.println("--------------------------");
         System.out.println("1. Somar");
         System.out.println("2. Subtrair");
@@ -18,13 +22,14 @@ public class VariablesTypes {
         System.out.println("5. Fim");
         System.out.println("--------------------------");
 
-        System.out.println("Que tipo de operação você deseja realizar: ");
+        System.out.println("\nQue tipo de operação você deseja realizar: ");
         int caseID = ler.nextInt();
-        
-        
-        
-    
-       
+
+        while (caseID < 1 || caseID > 5) {
+            System.out.println("Digite um valor válido entre 1 e 5 para realizar um tipo de operação:");
+           caseID = ler.nextInt();
+            
+        }
 
         switch (caseID){
             case 1: 
@@ -45,19 +50,20 @@ public class VariablesTypes {
             default:
                 break;
         }
+
     }
 
     public static void somar(){
-        System.out.println("Digite o primeiro número inteiro:");
+        System.out.println("\nDigite o primeiro número inteiro:");
         int num1 = ler.nextInt();
 
         System.out.println("Digite o segundo número inteiro para somar:");
         int num2 = ler.nextInt();
-
         int soma = num1 + num2;
 
         System.out.println("O valor da soma é: " + soma);
 
+        pressioneEnter();
     }
 
     
@@ -71,6 +77,19 @@ public class VariablesTypes {
     
 
     public static void dividr(){}
+
+    public static void pressioneEnter(){
+        
+        System.out.println("\n\nPressione a tecla [0] para continuar.");
+        int zero = ler.nextInt();
+
+        if (zero == 0) {
+            menu();    
+        } else {
+            System.exit(0);
+        }
+        
+    }
 
     
     
