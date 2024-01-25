@@ -54,29 +54,60 @@ public class OperacoesMatematica {
     }
 
     public static void somar(){
-        System.out.println("\nDigite o primeiro número inteiro:");
-        int num1 = ler.nextInt();
+        System.out.println("\nDigite o primeiro número:");
+        double num1 = ler.nextDouble();
 
-        System.out.println("Digite o segundo número inteiro para somar:");
-        int num2 = ler.nextInt();
-        int soma = num1 + num2;
+        System.out.println("Digite o segundo número para somar:");
+        double num2 = ler.nextFloat();
+        double soma = num1 + num2;
 
         System.out.println("O valor da soma é: " + soma);
-
         pressioneEnter();
     }
 
     
 
-    public static void subtrair(){}
+    public static void subtrair(){
+        System.out.println("Digite o primeiro número:");
+        float num1 = ler.nextFloat();
+
+        System.out.println("Digite o segundo número para subtrair:");
+        float num2 = ler.nextFloat();
+        float subtracao = num1 - num2;
+
+        System.out.println("O valor da subtração é: " + subtracao);
+        pressioneEnter();
+    }
 
     
 
-    public static void multiplicar(){}
+    public static void multiplicar(){
+        System.out.println("Digite o primeiro número:");
+        float num1 = ler.nextFloat();
+
+        System.out.println("Digite o segundo número para multiplicar:");
+        float num2 = ler.nextFloat();
+        float multiplicacao = num1 * num2;
+
+        System.out.println("O valor da multiplicação é: " + multiplicacao);
+        pressioneEnter();
+
+    }
 
     
 
-    public static void dividr(){}
+    public static void dividr(){
+        System.out.println("Digite o primeiro número:");
+        float num1 = ler.nextFloat();
+
+        System.out.println("Digite o segundo número para dividir:");
+        float num2 = ler.nextFloat();
+        float divisao = num1 / num2;
+        float resto = num1 % num2;
+
+        System.out.println("O valor da divisão é: " + divisao + ". O resto em número inteiro é: " + resto);
+        pressioneEnter();
+    }
 
     public static void pressioneEnter(){
         
